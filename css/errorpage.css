@@ -12,47 +12,73 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f3c8c8;
-    color: #992727;
+    background: url("assets/BackgroundOversized.png");
+    color: #fff;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 1rem;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 200;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 400;
-    display: inline-block;
-    padding: .5rem;
-    background-color: #f3c8c8;
-    transform: translateY(-2.5rem);
+    margin-bottom: 1rem;
 }
 
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
 @media screen and (min-width: 480px) {
     h1 {
-        font-size: 9rem;
+        font-size: 8rem;
     }
 
     h2 {
         font-size: 1.5rem;
-        transform: translateY(-4rem);
+    }
+
+    p {
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 800px) {
     h1 {
-        font-size: 15rem;
+        font-size: 12rem;
     }
 
     h2 {
-        font-size: 2.2rem;
-        transform: translateY(-6rem);
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
     }
 }
