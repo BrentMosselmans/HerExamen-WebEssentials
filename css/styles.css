@@ -1,4 +1,4 @@
-/* Color Palette */
+
 :root {
     --primary-color: #3498db;
     --primary-dark: #2980b9;
@@ -9,7 +9,7 @@
     --mid-neutral: #bdc3c7;
 }
 
-/* Base styles */
+
 body {
     font-family: 'Roboto Mono', monospace;
     color: var(--dark-neutral);
@@ -17,7 +17,7 @@ body {
     padding-top: 60px;
 }
 
-/* Navigation styles */
+
 .navbar {
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
     background-color: var(--primary-dark);
@@ -77,14 +77,14 @@ body {
     text-decoration: none !important;
 }
 
-/* Active nav link */
+
 .nav-link.active {
     color: var(--accent-color);
     font-weight: bold;
     text-decoration: none !important;
 }
 
-/* Desktop styles */
+
 @media screen and (min-width: 992px) {
     .navbar-collapse {
         display: flex !important;
@@ -103,7 +103,7 @@ body {
     }
 }
 
-/* Mobile styles */
+
 @media screen and (max-width: 991px) {
     .navbar-toggler {
         display: block;
@@ -125,7 +125,7 @@ body {
     }
 }
 
-/* Image styles */
+
 .limited-size-image {
     max-width: 100%;
     height: auto;
@@ -133,7 +133,7 @@ body {
     object-fit: contain;
 }
 
-/* Responsive typography */
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -146,7 +146,7 @@ body {
     }
 }
 
-/* Table styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -165,7 +165,7 @@ thead th {
     color: var(--primary-color);
 }
 
-/* Custom list styles */
+
 ul.custom-list {
     list-style-type: none;
     padding-left: 0;
@@ -176,7 +176,7 @@ ul.custom-list li::before {
     color: var(--secondary-color);
 }
 
-/* Print styles */
+
 @media print {
     .navbar {
         display: none;
@@ -195,7 +195,7 @@ ul.custom-list li::before {
     }
 }
 
-/* Additional styles for better readability and aesthetics */
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -206,12 +206,12 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Add some padding to sections */
+
 section {
     padding: 2rem 0;
 }
 
-/* Style links consistently */
+
 a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -222,18 +222,18 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Add a subtle background to alternating rows in tables */
+
 tbody tr:nth-of-type(odd) {
     background-color: rgba(52, 152, 219, 0.1);
 }
 
-/* Headings */
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-/* 2D Transformations and Animations */
+
 @media (hover: hover) and (pointer: fine) {
     .nav-link {
         transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -300,7 +300,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Button styles */
 .btn {
     display: inline-block;
     padding: 0.5rem 1rem;

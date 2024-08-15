@@ -18,13 +18,13 @@ body {
     min-height: 100vh;
 }
 
-/* Flyer container styled to A4 dimensions */
+
 .flyer-container {
-    width: 210mm;  /* A4 width */
-    height: 297mm; /* A4 height */
+    width: 210mm;  
+    height: 297mm; 
     background: url('../assets/FlyerBackground.png') no-repeat center center;
     background-size: cover;
-    padding: 20mm;  /* Adjust padding as needed */
+    padding: 20mm;  
     box-sizing: border-box;
     border: 5px solid #333;
     display: flex;
@@ -33,7 +33,7 @@ body {
     color: red;
 }
 
-/* Header styles */
+
 .flyer-header {
     text-align: center;
 }
@@ -71,24 +71,24 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Print-specific styles */
+
 @media print {
     body {
         margin: 0;
         padding: 0;
         width: 210mm;
         height: 297mm;
-        overflow: hidden; /* Prevent overflow to ensure single-page print */
+        overflow: hidden; 
     }
 
     .flyer-container {
         width: 210mm;
         height: 297mm;
         margin: 0;
-        padding: 10mm;  /* Adjust padding to ensure content fits */
+        padding: 10mm;  
         box-sizing: border-box;
-        border: none;  /* Remove border to prevent clipping */
-        overflow: hidden; /* Hide overflow to avoid content being cut off */
+        border: none;  
+        overflow: hidden; 
         background: url('../assets/FlyerBackground.png') no-repeat center center;
         background-size: cover;
         -webkit-print-color-adjust: exact;
@@ -96,8 +96,8 @@ body {
         page-break-inside: avoid;
     }
 
-    /* Ensure text is appropriately scaled and fits on the page */
+ 
     .flyer-header h1, .flyer-header h2, .flyer-content, .flyer-footer p {
-        font-size: 1rem;  /* Scale down for print if needed */
+        font-size: 1rem;  
     }
 }
