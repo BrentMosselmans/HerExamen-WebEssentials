@@ -1,0 +1,146 @@
+/* Base styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    color: black;
+    background-color: white;
+    padding-top: 60px;
+}
+
+/* Navigation styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: transparent;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-collapse {
+    display: flex;
+}
+
+.navbar-nav {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-link {
+    color: rgba(0,0,0,.55);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    display: block;
+}
+
+/* Ensure the checkbox is hidden */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Responsive design */
+@media screen and (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        z-index: 1020;
+    }
+
+    .navbar-toggle:checked ~ .navbar-collapse {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-link {
+        padding: .25rem .5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Footer styles */
+footer, .footer {
+    background-color: #f8f9fa;
+    color: black;
+    padding: 1rem 0;
+}
+
+footer a, .footer a {
+    color: #007bff;
+}
+
+footer a:hover, .footer a:hover {
+    color: #0056b3;
+}
+
+/* Table styles */
+.table {
+    color: black;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+/* Print styles */
+@media print {
+    /* Add any print-specific styles here if needed */
+}
