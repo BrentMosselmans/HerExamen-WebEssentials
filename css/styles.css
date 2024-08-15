@@ -116,31 +116,8 @@ body {
     }
 }
 
-/* Footer styles */
-footer, .footer {
-    background-color: #f8f9fa;
-    color: black;
-    padding: 1rem 0;
-}
-
-footer a, .footer a {
-    color: #007bff;
-}
-
-footer a:hover, .footer a:hover {
-    color: #0056b3;
-}
-
-/* Table styles */
-.table {
-    color: black;
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0,0,0,.05);
-}
-
-/* Print styles */
-@media print {
-    /* Add any print-specific styles here if needed */
+.limited-size-image {
+    max-width: 500px;
+    max-height: 500px;
+    object-fit: contain;
 }
